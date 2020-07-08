@@ -45,9 +45,13 @@ $shaddow: rgba(0,0,0,0.3);
 	color: $primaryColor;
 }
 .link {
-	color: $primaryColor;
+	color: $lightColor;
 	text-decoration: underline
 }
+.link.light {
+	color: $primaryColor;
+}
+
 
 body {
   margin: 0;
