@@ -35,8 +35,8 @@ async function onPageLoad() {
 	let titleTexts = loadTexts()
 	let icons = loadIcons()
 	console.log(titleTexts)
-	await renderWithDelay(titleTexts, 1)
-	await wait(1)
+	await renderWithDelay(titleTexts, 0.5)
+	await wait(0.5)
 	toggleHidden(document.querySelector('.title__group'))
 	await renderWithDelay(icons, 0.1)
 }
