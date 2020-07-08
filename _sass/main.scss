@@ -2,7 +2,7 @@ $bodyFont: 'Muli', sans-serif;
 $titleFont: 'Abril Fatface', cursive;
 
 $primaryColor: #f4f6ff;
-$secondaryColor: #f3c623;
+$secondaryColor: #10375c;
 $lightColor: #224A71;
 $accentColor: #10375c;
 $shaddow: rgba(0,0,0,0.3);
@@ -24,10 +24,16 @@ $shaddow: rgba(0,0,0,0.3);
 		font-size: 2em
 	}
 }
+.section_header.light {
+	color: $primaryColor;
+}
 .header {
 	font-size: 2em;
-	color: $accentColor;
+	color: $secondaryColor;
   	font-family: $bodyFont;
+}
+.header.light{
+	color: $primaryColor;
 }
 
 .paragraph {
@@ -35,8 +41,11 @@ $shaddow: rgba(0,0,0,0.3);
 	color: $lightColor;
   	font-family: $bodyFont;
 }
+.paragraph.light {
+	color: $primaryColor;
+}
 .link {
-	color: $accentColor;
+	color: $lightColor;
 	text-decoration: underline
 }
 
@@ -118,7 +127,7 @@ hr {
 	width: 100%;
 }
 .tag {
-	background-color: $shaddow;
+	background-color: $primaryColor;
 	padding: 0.5em;
 	border-radius: 4px;
 	display: inline;

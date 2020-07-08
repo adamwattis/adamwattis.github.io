@@ -6,11 +6,17 @@
 
 @media screen and (max-width: 768px) { .section_header { font-size: 2em; } }
 
+.section_header.light { color: #f4f6ff; }
+
 .header { font-size: 2em; color: #10375c; font-family: "Muli", sans-serif; }
+
+.header.light { color: #f4f6ff; }
 
 .paragraph { font-size: 1em; color: #224A71; font-family: "Muli", sans-serif; }
 
-.link { color: #10375c; text-decoration: underline; }
+.paragraph.light { color: #f4f6ff; }
+
+.link { color: #224A71; text-decoration: underline; }
 
 body { margin: 0; background: #f4f6ff; color: #224A71; font-family: "Muli", sans-serif; }
 
@@ -34,7 +40,7 @@ hr { width: 25%; display: inline-block; border-color: #224A71; display: block; m
 
 @media screen and (min-width: 768px) { .tool__icon { width: 5em; height: 5em; } }
 
-.projects { background: #f3c623; }
+.projects { background: #10375c; }
 
 .projects__grid { display: grid; grid-gap: 2em; grid-template-columns: 1fr 1fr; }
 
@@ -48,9 +54,9 @@ hr { width: 25%; display: inline-block; border-color: #224A71; display: block; m
 
 .project__image { width: 100%; }
 
-.tag { background-color: rgba(0, 0, 0, 0.3); padding: 0.5em; border-radius: 4px; display: inline; margin-right: 0.5em; }
+.tag { background-color: #f4f6ff; padding: 0.5em; border-radius: 4px; display: inline; margin-right: 0.5em; }
 
-.contact { background: #f3c623; padding-bottom: 200px; }
+.contact { background: #10375c; padding-bottom: 200px; }
 
 .post { height: 100vh; border: 2em solid #10375c; padding: 4vh; box-sizing: border-box; overflow-y: scroll; }
 
