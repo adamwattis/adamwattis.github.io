@@ -10,7 +10,7 @@ title: "Portfolio"
 			<p class="paragraph">Currently using these tools:</p>
 			<div class="tools">
 			{% for tool in site.data.tools %}
-				<img class="tool__icon hidden" src="{{ tool.icon }}" />
+				<a href="{{ tool.link }}"><img class="tool__icon hidden" src="{{ tool.icon }}" /></a>
 			{% endfor %}
 			</div>
 		</div>

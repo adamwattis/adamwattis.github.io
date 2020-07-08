@@ -1,8 +1,12 @@
 - title: React
   icon: /assets/icons/react.svg
+  link: https://reactjs.org/
 - title: Vue
   icon: /assets/icons/vue.svg
+  link: https://vuejs.org/
 - title: Javascript
   icon: /assets/icons/js.svg
+  link: https://en.wikipedia.org/wiki/JavaScript
 - title: Sketch
   icon: /assets/icons/sketch.svg
+  link: https://www.sketch.com/
