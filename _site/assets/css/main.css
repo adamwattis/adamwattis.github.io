@@ -36,7 +36,7 @@ hr { width: 25%; display: inline-block; border-color: #224A71; display: block; m
 
 .projects { background: #f3c623; }
 
-.projects__grid { display: grid; grid-template-columns: 1fr 1fr; }
+.projects__grid { display: grid; grid-gap: 2em; grid-template-columns: 1fr 1fr; }
 
 @media screen and (max-width: 768px) { .projects__grid { grid-template-columns: auto; } }
 
