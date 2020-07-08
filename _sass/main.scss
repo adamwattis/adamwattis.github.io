@@ -20,6 +20,9 @@ $shaddow: rgba(0,0,0,0.3);
 	font-size: 3em;
 	font-family: $titleFont;
 	color: $accentColor;
+	@media screen and (max-width: 768px) {
+		font-size: 2em
+	}
 }
 .header {
 	font-size: 2em;
@@ -135,9 +138,9 @@ hr {
 
 // Post
 .post {
-	height: 96vh;
+	height: 100vh;
 	border: 2em solid $accentColor;
-	margin: 2vh;
 	padding: 4vh;
 	box-sizing: border-box;
+	overflow-y: scroll;
 }

@@ -4,6 +4,8 @@
 
 .section_header { font-size: 3em; font-family: "Abril Fatface", cursive; color: #10375c; }
 
+@media screen and (max-width: 768px) { .section_header { font-size: 2em; } }
+
 .header { font-size: 2em; color: #10375c; font-family: "Muli", sans-serif; }
 
 .paragraph { font-size: 1em; color: #224A71; font-family: "Muli", sans-serif; }
@@ -50,6 +52,6 @@ hr { width: 25%; display: inline-block; border-color: #224A71; display: block; m
 
 .contact { background: #f3c623; padding-bottom: 200px; }
 
-.post { height: 96vh; border: 2em solid #10375c; margin: 2vh; padding: 4vh; box-sizing: border-box; }
+.post { height: 100vh; border: 2em solid #10375c; padding: 4vh; box-sizing: border-box; overflow-y: scroll; }
 
 /*# sourceMappingURL=main.css.map */
