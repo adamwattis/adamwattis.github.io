@@ -1,0 +1,55 @@
+---
+layout: default
+title: "Portfolio"
+---
+<div>
+	<section class="landing hidden">
+		<b class="title hidden">Hello, my name is Adam.</b><b class="title hidden"> I'm a developer.</b>
+		<div class="title__group hidden">
+			<hr/>
+			<p class="paragraph">Currently using these tools:</p>
+			<div class="tools">
+			{% for tool in site.data.tools %}
+				<img class="tool__icon hidden" src="{{ tool.icon }}" />
+			{% endfor %}
+			</div>
+		</div>
+	</section>
+
+	<section class="projects hidden">
+		<h1 class="section_header">Projects</h1>
+		<div class="projects__grid">
+		  {% for post in site.posts %}
+		  	<a class="project__link" href="{{ post.url }}">
+		    <div class="project">
+		    	<img class="project__image" src="{{ post.image }}"/>
+		    	<h2 class="header">{{ post.title }}</h2>
+		    	{% for tag in post.tags %}
+		    		<div class="tag">
+		    			<span class="paragraph">{{ tag }}</span>
+		    		</div>
+		    	{% endfor %}
+		    	<span class="paragraph">{{ post.excerpt }}</span>
+		    </div>
+			</a>
+		  {% endfor %}
+		</div>
+	</section>
+
+	<section class="writings hidden">
+		<h1 class="section_header">Writings</h1>
+		{% for writing in site.data.writings %}
+		<div>
+			<h2 class="header">{{ writing.title }}</h2>
+			<p class="paragraph">{{ writing.details }}</p>
+			<a href="{{ writing.link }}"class="link">Read article</a>
+		</div>
+		{% endfor %}
+	</section>
+
+	<section class="contact hidden">
+		<h1 class="section_header">Contact</h1>
+		<p class="paragraph">Feel free to <a href="mailto:adamjwattis@gmail.com" class="link">reach out</a> to me. I'm also on <a href="https://github.com/adamwattis" class="link">Github</a> and I post articles on <a href="https://medium.com/@adamwattis" class="link">Medium</a> from time to time.</p>
+	</section>
+
+</div>

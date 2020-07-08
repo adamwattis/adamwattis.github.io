@@ -1,0 +1,143 @@
+$bodyFont: 'Muli', sans-serif;
+$titleFont: 'Abril Fatface', cursive;
+
+$primaryColor: #f4f6ff;
+$secondaryColor: #f3c623;
+$lightColor: #224A71;
+$accentColor: #10375c;
+$shaddow: rgba(0,0,0,0.3);
+
+// Font Styles
+.title {
+	font-size: 4em;
+	font-family: $titleFont;
+	color: $accentColor;
+	@media screen and (max-width: 768px) {
+		font-size: 3rem
+	}
+}
+.section_header {
+	font-size: 3em;
+	font-family: $titleFont;
+	color: $accentColor;
+}
+.header {
+	font-size: 2em;
+	color: $accentColor;
+  	font-family: $bodyFont;
+}
+
+.paragraph {
+	font-size: 1em; 
+	color: $lightColor;
+  	font-family: $bodyFont;
+}
+.link {
+	color: $accentColor;
+	text-decoration: underline
+}
+
+body {
+  margin: 0;
+  background: $primaryColor;
+  color: $lightColor;
+  font-family: $bodyFont;
+}
+section {
+	padding: 2em;
+}
+section, .title, .title__group, .tool__icon {
+	opacity: 1;
+    transition: 1s opacity;
+}
+section.hidden, .title.hidden, .title__group.hidden, .tool__icon.hidden {
+    opacity: 0;
+    transition: 1s opacity;
+}
+hr {
+	width: 25%;
+	display: inline-block;
+	border-color: $lightColor;
+	display: block;
+	margin: 0;
+	margin-top: 1rem;
+}
+
+.landing {
+	background: $primaryColor;
+	padding: 2em;
+	height: 100vh;
+	@media screen and (min-width: 768px) {
+		padding: 8em;
+	}
+}
+.title__group {
+	paadding-top: 1
+}
+.tools {
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.tool__icon {
+	width: 4em;
+	height: 4em;
+	@media screen and (min-width: 768px) {
+		width: 5em;
+		height: 5em;
+	}
+}
+
+
+// Projects
+.projects {
+	background: $secondaryColor;
+}
+.projects__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	@media screen and (max-width: 768px) {
+		grid-template-columns: auto;
+	}
+}
+.project {
+	padding: 8px;
+	border-radius: 4px;
+}
+.project:hover {
+	background-color: $shaddow;
+}
+.project__link {
+	text-decoration:none;
+}
+.project__image {
+	width: 100%;
+}
+.tag {
+	background-color: $shaddow;
+	padding: 0.5em;
+	border-radius: 4px;
+	display: inline;
+	margin-right: 0.5em;
+}
+
+
+// Writings
+.writings {
+	
+}
+
+// Contact
+.contact {
+	background: $secondaryColor;
+	padding-bottom: 200px;
+}
+
+// Post
+.post {
+	height: 96vh;
+	border: 2em solid $accentColor;
+	margin: 2vh;
+	padding: 4vh;
+	box-sizing: border-box;
+}

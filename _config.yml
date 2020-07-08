@@ -1,0 +1,5 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+title: "Adam Wattis" # the name of your site, e.g. ACME Corp.
+description: > # this means to ignore newlines until "baseurl:"
+  Adam Wattis - developer portfolio.
+baseurl: "" # the subpath of your site, e.g. /blog
